@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--     Getter setter example for variable age -->
+<!--    <bean id="Dev" class="org.example.Dev">-->
+<!--        <property name="age" value="22" />-->
+<!--    </bean>-->
+
+
+    <!-- Constructor example for variable age -->
+<!--    <bean id="Dev1" class="org.example.Dev">-->
+<!--        <constructor-arg value="30" />-->
+<!--    </bean>-->
+
+<!--     Getter Setter example for ref variable Laptop -->
+    <bean id="Dev2" class="org.example.Dev">
+        <property name="laptop" ref="lap1" />
+    </bean>
+
+    <!-- Constructor example for ref variable Laptop -->
+<!--    <bean id="Dev3" class ="org.example.Dev">-->
+<!--        <constructor-arg ref="lap1" />-->
+<!--    </bean>-->
+
+    <bean id="lap1" class="org.example.Laptop"/>
+
+</beans>
